@@ -10,6 +10,7 @@ import { ToylistComponent } from './toylist/toylist.component';
 import { BookListComponent } from './componenets/book-list/book-list.component';
 import { FoodListComponent } from './componenets/food-list/food-list.component';
 import { BikeListComponent } from './componenets/bike-list/bike-list.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
