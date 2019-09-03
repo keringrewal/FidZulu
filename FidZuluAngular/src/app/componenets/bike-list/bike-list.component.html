@@ -1,0 +1,25 @@
+<div class="mainContainer">
+    <h4> 
+        List of Bikes!
+    </h4>
+
+    <table class="table table-bordered">
+        <thead class='head'>
+            <tr>
+                <th scope="col">Name </th>
+                <th scope="col">Brand </th>
+                <th scope="col">Color</th>
+                <th scope="col">Price</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let bike of bikes">
+              <td>{{ bike.name }}</td>
+              <td>{{ bike.brand }}</td>
+              <td>{{ bike.color }}</td>
+              <td> {{ bike.price }} </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
