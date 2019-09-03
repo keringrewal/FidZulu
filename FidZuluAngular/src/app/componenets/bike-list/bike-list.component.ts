@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Bikes } from '../../models/bikes'
+import { BikeService } from 'src/app/services/bike.service';
 
 @Component({
   selector: 'app-bike-list',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BikeListComponent implements OnInit {
 
-  constructor() { }
+  @Input() bikes: Bikes[] = [];
+
+  constructor(private bikeService: BikeService) { }
 
   ngOnInit() {
+    this.getBikes();
+  }
+
+  getBikes() {
+    this.bikeService.getJSON().subscribe((data) => {
+      this.bikes = data;
+    });
   }
 
 }

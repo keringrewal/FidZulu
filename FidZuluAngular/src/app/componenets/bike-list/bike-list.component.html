@@ -1,1 +1,10 @@
-<p>bike-list works!</p>
+<div class="left">
+    <h3>Bikes</h3>
+
+    <ul *ngFor="let bike of bikes">
+        <li>Name: {{ bike.name }}</li>
+        <li>Brand: {{ bike.brand }}</li>
+        <li>Color: {{ bike.color }}</li>
+        <li>Price: {{ bike.price }}</li>
+    </ul>
+</div>

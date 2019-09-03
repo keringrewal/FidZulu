@@ -1,0 +1,6 @@
+.left{
+    display: flex;
+    flex-flow: column;
+    float: left;
+    text-align: left;
+}
