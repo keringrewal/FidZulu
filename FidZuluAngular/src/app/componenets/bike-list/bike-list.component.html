@@ -1,10 +1,25 @@
-<div class="left">
-    <h3>Bikes</h3>
+<div class="mainContainer">
+    <h4> 
+        List of Bikes!
+    </h4>
 
-    <ul *ngFor="let bike of bikes">
-        <li>Name: {{ bike.name }}</li>
-        <li>Brand: {{ bike.brand }}</li>
-        <li>Color: {{ bike.color }}</li>
-        <li>Price: {{ bike.price }}</li>
-    </ul>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name </th>
+                <th scope="col">Brand </th>
+                <th scope="col">Color</th>
+                <th scope="col">Price</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let bike of bikes">
+              <td>{{ bike.name }}</td>
+              <td>{{ bike.brand }}</td>
+              <td>{{ bike.color }}</td>
+              <td> {{ bike.price }} </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>

@@ -1,11 +1,28 @@
-<div class="left">
-    <h3>Food</h3>
 
-    <ul *ngFor="let food of foods">
-        <li>Name: {{ food.name }}</li>
-        <li>Brand: {{ food.brand }}</li>
-        <li>Weight: {{ food.weight }}</li>
-        <li>Calories: {{ food.calories }}</li>
-        <li>Price: {{ food.price }}</li>
-    </ul>
+<div class="mainContainer">
+    <h4> 
+        List of Food!
+    </h4>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name </th>
+                <th scope="col">Brand </th>
+                <th scope="col">Weight</th>
+                <th scope="col">Calories</th>
+                <th scope="col">Price</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let food of foods">
+              <td>{{ food.name }}</td>
+              <td>{{ food.brand }}</td>
+              <td>{{ food.weight }}</td>
+              <td> {{ food.calories }}</td>
+              <td> {{ food.price }} </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
