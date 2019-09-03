@@ -1,3 +1,8 @@
 .mainContainer {
     margin: 5%;
 }
+
+.head{
+    background-color: green;
+    color: white;
+}
