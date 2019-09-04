@@ -11,6 +11,7 @@ import { BookListComponent } from './componenets/book-list/book-list.component';
 import { FoodListComponent } from './componenets/food-list/food-list.component';
 import { BikeListComponent } from './componenets/bike-list/bike-list.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import {MatTabsModule} from '@angular/material/tabs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTabsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
