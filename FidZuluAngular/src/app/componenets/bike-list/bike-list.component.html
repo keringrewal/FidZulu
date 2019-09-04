@@ -17,7 +17,7 @@
               <td>{{ bike.name }}</td>
               <td>{{ bike.brand }}</td>
               <td>{{ bike.color }}</td>
-              <td> {{ bike.price }} </td>
+              <td> {{ bike.price | currency : '$'}} </td>
             </tr>
         </tbody>
     </table>

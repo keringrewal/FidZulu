@@ -17,7 +17,7 @@
             <tr *ngFor="let book of books">
               <td>{{book.Title}}</td>
               <td>{{book.Author}}</td>
-              <td>{{book.price}}</td>
+              <td>{{book.price | currency : '$'}}</td>
               <td> {{book.ISBN}}</td>
               <td> {{book.publisher}} </td>
             </tr>

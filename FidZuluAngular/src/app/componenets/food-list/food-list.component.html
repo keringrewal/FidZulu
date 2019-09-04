@@ -20,7 +20,7 @@
               <td>{{ food.brand }}</td>
               <td>{{ food.weight }}</td>
               <td> {{ food.calories }}</td>
-              <td> {{ food.price }} </td>
+              <td> {{ food.price | currency : '$'}} </td>
             </tr>
         </tbody>
     </table>
