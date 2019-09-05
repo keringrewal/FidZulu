@@ -1,0 +1,23 @@
+<div class="mainContainer">
+    <h4> 
+        List of Toys!
+    </h4>
+<table class="table table-bordered">
+    <thead  class="head">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Brand</th>
+            <th scope="col">Age Group</th>
+            <th scope="col">Prize</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let toy of listOfToys">
+            <td>{{toy.name}}</td>
+            <td>{{toy.brand}}</td>
+            <td>{{toy.ageGroup}}</td>
+            <td>{{toy.prize}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>

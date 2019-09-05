@@ -1,0 +1,25 @@
+<div class="mainContainer">
+    <h4> 
+        List of Laptops!
+    </h4>
+<table class="table table-bordered">
+    <thead  class="head">
+      <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Brand</th>
+          <th scope="col">CPU</th>
+          <th scope="col">Memory</th>
+          <th scope="col">Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let laptop of listOfLaptops">
+          <td>{{laptop.product}}</td>
+          <td>{{laptop.brand}}</td>
+          <td>{{laptop.CPU}}</td>
+          <td>{{laptop.memory}}</td>
+          <td>{{laptop.price | currency : '$'}}</td>
+      </tr>
+  </tbody>
+</table>
+</div>

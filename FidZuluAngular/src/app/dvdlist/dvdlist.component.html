@@ -1,0 +1,25 @@
+<div class="mainContainer">
+  <h4> 
+      List of DVDs!
+  </h4>
+<table class="table table-bordered">
+  <thead  class="head">
+      <tr>
+          <th scope="col">Title</th>
+          <th scope="col">MPAA Rating</th>
+          <th scope="col">Studio</th>
+          <th scope="col">Time</th>
+          <th scope="col">Price</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let DVD of listOfDVDs">
+        <td>{{DVD.title}}</td>
+        <td>{{DVD.mpaa_rating}}</td>
+        <td>{{DVD.studio}}</td>
+        <td>{{DVD.time}}</td>
+        <td>{{DVD.price | currency : '$'}}</td>
+      </tr>
+  </tbody>
+</table>
+</div>

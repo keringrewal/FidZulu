@@ -8,7 +8,7 @@ import { Book } from '../models/books';
 })
 export class BookService {
 
-  private url: string = '../../assets/Booksjson.json'; 
+  private url: string = 'http://localhost:3021/classb/books/US-NC'; 
 
   constructor(private httpClient: HttpClient) {  }
 
