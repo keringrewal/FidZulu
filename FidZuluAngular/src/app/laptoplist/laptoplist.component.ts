@@ -17,7 +17,7 @@ export class LaptoplistComponent implements OnInit {
     this.getLaptops();
   }
   getLaptops() {
-      this.laptopService.getAllLaptops()
+      this.laptopService.getAllLaptops('')
       .subscribe((data) => {this.listOfLaptops = data;
       console.log(data);})
   }

@@ -17,9 +17,20 @@ export class DvdlistComponent implements OnInit {
     this.getDVDs();
   }
   getDVDs() {
-      this.DvdService.getAllDVD()
+      this.DvdService.getAllDVD('')
       .subscribe((data) => {this.listOfDVDs = data;
       console.log(data);})
   }
+  getRaleigh() {
+    this.DvdService.getAllDVD('US-NC')
+    .subscribe((data) => {this.listOfDVDs = data;
+    console.log(data);})
+}
+
+getIE() {
+  this.DvdService.getAllDVD('IE')
+  .subscribe((data) => {this.listOfDVDs = data;
+  console.log(data);})
+}
 
 }

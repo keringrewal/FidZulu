@@ -17,7 +17,7 @@ public listOfToys: Toys[] = [];
     this.getToys();
   }
   getToys() {
-    this.toyService.getAllToys()
+    this.toyService.getAllToys('')
       .subscribe((data) => {this.listOfToys = data;
       console.log(data);})
   }
