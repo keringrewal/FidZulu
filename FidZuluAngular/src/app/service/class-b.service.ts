@@ -10,9 +10,9 @@ import { Toys } from '../models/toys';
 })
 export class ClassBService {
 
-  private toyUrl = 'http://localhost:3021/classb/toys/';
-  private DVDUrl = 'http://localhost:3022/classb/dvds/';
-  private laptopUrl = 'http://localhost:3022/classb/laptops/';
+  private toyUrl = 'http://'+window.location.hostname +':3021'+'/classb/toys/';
+  private DVDUrl = 'http://'+window.location.hostname +':3022'+'/classb/dvds/';
+  private laptopUrl = 'http://'+window.location.hostname +':3022'+'/classb/laptops/';
 
   constructor(private http: HttpClient) { }
 
