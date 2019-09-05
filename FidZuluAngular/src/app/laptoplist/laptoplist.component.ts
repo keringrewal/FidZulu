@@ -20,6 +20,6 @@ export class LaptoplistComponent implements OnInit {
       this.laptopService.getAllLaptops('')
       .subscribe((data) => {this.listOfLaptops = data;
       console.log(data);})
-  }
+      }
 
 }

@@ -17,7 +17,7 @@ export class DvdlistComponent implements OnInit {
     this.getDVDs();
   }
   getDVDs() {
-      this.DvdService.getAllDVD('')
+      this.DvdService.getAllDVD('ID')
       .subscribe((data) => {this.listOfDVDs = data;
       console.log(data);})
   }
